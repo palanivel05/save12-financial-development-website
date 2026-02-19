@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ================= LANDING PAGE ================= */
+
+.landing-body {
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1559526324-593bc073d938') no-repeat center center/cover;
+    color: white;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00ffcc;
+}
+
+.nav-buttons .btn {
+    margin-left: 15px;
+}
+
+/* Center Content */
+.center-content {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+}
+
+.center-content h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.center-content p {
+    max-width: 600px;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.login-btn {
+    background: #ff9800;
+    color: white;
+}
+
+.register-btn {
+    background: #4CAF50;
+    color: white;
+}
+
+.get-started {
+    background: #00c6ff;
+    color: white;
+    font-size: 18px;
+}
+
+.back-btn {
+    background: #ff5722;
+    color: white;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+/* ================= LOGIN PAGE ================= */
+
+.login-body {
+    height: 100vh;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+}
+
+.login-box {
+    width: 350px;
+    margin: 120px auto;
+    padding: 30px;
+    background: white;
+    color: black;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    color: #0072ff;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.login-submit {
+    width: 100%;
+    background: #0072ff;
+    color: white;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.login-submit:hover {
+    background: #005bb5;
+}
+/* ================= DASHBOARD PAGE ================= */
+
+.dashboard-body {
+    background: linear-gradient(to right, #ff9966, #ff5e62);
+    min-height: 100vh;
+    color: white;
+}
+
+.dashboard-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.dashboard-container h1 {
+    margin-bottom: 30px;
+}
+
+/* Dashboard Cards */
+
+.dashboard-card {
+    background: white;
+    color: black;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transition: 0.3s ease;
+}
+
+.dashboard-card:hover {
+    transform: scale(1.03);
+}
+
+.savings-card {
+    border-left: 8px solid #4CAF50;
+}
+
+.emergency-card {
+    border-left: 8px solid #ff9800;
+}
+
+.dashboard-card h2 {
+    margin-bottom: 20px;
+}
+
+/* Input Group */
+
+.input-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Result Box */
+
+.result-box {
+    margin-top: 20px;
+    padding: 15px;
+    background: #e8f5e9;
+    border-radius: 10px;
+}
+
+.result-box h3 {
+    color: #2e7d32;
+    font-size: 28px;
+}
+
+/* Emergency Progress */
+
+.progress-section {
+    margin-top: 20px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 25px;
+    background: #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 30%;
+    background: linear-gradient(to right, #ff9800, #ff5722);
+    transition: width 0.5s ease-in-out;
+}
+/* ================= PROFILE SECTION ================= */
+
+.profile-card {
+    border-left: 8px solid #00c6ff;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Make dashboard slightly more colorful */
+
+.dashboard-body {
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+}
+
+.dashboard-card {
+    border-radius: 20px;
+}
+
+.dashboard-card h2 {
+    color: #333;
+}
+/* Forgot Password */
+
+.forgot-section {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.forgot-section a {
+    font-size: 14px;
+    color: #0072ff;
+    text-decoration: none;
+}
+
+.forgot-section a:hover {
+    text-decoration: underline;
+}
+
+/* Switch Text */
+
+.switch-text {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.switch-text a {
+    color: #0072ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.switch-text a:hover {
+    text-decoration: underline;
+}
+/* Reset Password Page */
+
+.reset-text {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.success-message {
+    margin-top: 15px;
+    font-size: 14px;
+    color: green;
+}
+
+#warningMessage {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+
+

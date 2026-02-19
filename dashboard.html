@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Save12 - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dashboard-body">
+
+    <nav>
+        <div class="logo">Save12</div>
+        <div class="nav-buttons">
+            <a href="index.html" class="btn back-btn">Logout</a>
+        </div>
+        
+    </nav>
+
+    <div class="dashboard-container">
+
+        <h1>Your Financial Dashboard 💰</h1>
+
+        <!-- USER PROFILE SECTION -->
+        <div class="dashboard-card profile-card">
+            <h2>User Profile</h2>
+
+            <div class="input-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your name">
+            </div>
+
+            <div class="input-group">
+                <label>Age</label>
+                <input type="number" placeholder="Enter your age">
+            </div>
+
+            <div class="input-group">
+                <label>Occupation</label>
+                <select>
+                    <option>Select your occupation</option>
+                    <option>Student</option>
+                    <option>Private Employee</option>
+                    <option>Government Employee</option>
+                    <option>Self-Employed</option>
+                    <option>Business Owner</option>
+                    <option>Freelancer</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- SAVINGS RATIO CALCULATOR -->
+        <div class="dashboard-card savings-card">
+            <h2>Savings Ratio Calculator</h2>
+
+            <div class="input-group">
+                <label>Monthly Income</label>
+                <input type="number" id="income" placeholder="Enter your income">
+            </div>
+
+            <h3>Expense Breakdown</h3>
+
+            <div class="input-group">
+                <label>🏠 Rent</label>
+                <input type="number" class="expense" placeholder="Rent">
+            </div>
+
+            <div class="input-group">
+                <label>🛒 Groceries</label>
+                <input type="number" class="expense" placeholder="Groceries">
+            </div>
+
+            <div class="input-group">
+                <label>🍔 Food</label>
+                <input type="number" class="expense" placeholder="Food">
+            </div>
+
+            <div class="input-group">
+                <label>🚗 Transport</label>
+                <input type="number" class="expense" placeholder="Transport">
+            </div>
+
+            <div class="input-group">
+                <label>📱 Utilities</label>
+                <input type="number" class="expense" placeholder="Utilities">
+            </div>
+
+            <button class="btn calculate-btn" onclick="calculateSavings()">
+                Calculate Savings
+            </button>
+
+            <div class="result-box">
+                <p>Total Expenses: ₹ <span id="totalExpenses">0</span></p>
+                <p>Your Savings Ratio:</p>
+                <h3 id="savingsRatio">0%</h3>
+                <p id="warningMessage"></p>
+            </div>
+        </div>
+
+        <!-- EMERGENCY FUND TRACKER -->
+        <div class="dashboard-card emergency-card">
+            <h2>Emergency Fund Tracker</h2>
+
+            <div class="input-group">
+                <label>Current Emergency Savings</label>
+                <input type="number" id="emergencySavings" placeholder="Enter saved amount">
+            </div>
+
+            <!-- NEW BUTTON -->
+            <button class="btn calculate-btn" onclick="calculateEmergency()">
+                Calculate Emergency Fund
+            </button>
+
+            <div class="progress-section">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="emergencyProgress"></div>
+                </div>
+                <p>Goal: 3 Months Income</p>
+                <h3 id="emergencyPercent">0% is completed</h3>
+            </div>
+        </div>
+
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
